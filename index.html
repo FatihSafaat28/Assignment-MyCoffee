@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-[Open_Sans]">
-    <!-- NAVIGATION BAR -->
+    <div class="max-w-screen-2xl mx-auto overflow-x-hidden">
+        <!-- NAVIGATION BAR -->
     <header>
         <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6">
             <!-- LOGO LEFT -->
@@ -46,9 +47,9 @@
         </div>
     </section>
     <!-- SECOND SECTION -->
-    <section class="lg:max-h-[800px]">
-        <div class="flex flex-col lg:flex-row lg:h-screen">
-            <div class="flex relative overflow-clip w-screen h-[580px] lg:h-screen lg:flex-3 bg-[url(img/photo/section2-bg.png)] bg-no-repeat bg-cover lg:pl-12 lg:py-6">
+    <section class="lg:max-h-[800px] xl:max-h-fit">
+        <div class="flex flex-col lg:flex-row lg:h-[800px] xl:h-fit">
+            <div class="flex relative overflow-clip w-screen h-[580px] lg:h-[800px] xl:h-[1024px] lg:flex-3 bg-[url(img/photo/section2-bg.png)] bg-no-repeat bg-cover lg:pl-12 lg:py-6">
                 <img class="absolute w-[360px] h-auto top-[55%] left-[10%] sm:left-[30%] lg:left-[25%] rotate-[-20deg] transform -translate-x-1/2 -translate-y-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
                 <img class="absolute w-[360px] h-auto top-[50%] left-[50%] rotate-[2deg] transform -translate-x-1/2 -translate-y-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
                 <img class="absolute w-[360px] h-auto top-[60%] left-[90%] sm:left-[70%] lg:left-[75%] rotate-[32deg] transform -translate-x-1/2 -translate-y-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
@@ -81,7 +82,7 @@
                 <div class="px-5 md:px-8 lg:w-screen lg:p-0 lg:flex-2">
                     <img class="w-screen max-h-[600px] h-auto rounded-lg shadow-[-8px_8px_12px_-1px_#4B2E2E] object-cover object-top" src="img/photo/section 3.png" alt="SECTION-3-PHOTO">
                 </div>
-                <div class="flex flex-col lg:w-screen px-5 py-3 md:py-4 md:px-8 md:mt-6 lg:py-0 lg:px-12 lg:flex-3">
+                <div class="flex flex-col lg:w-screen px-5 py-3 md:py-4 md:px-8 mt-6 lg:mt-0 lg:py-0 lg:px-12 lg:flex-3">
                     <div class="font-bold text-center text-2xl md:text-4xl lg:text-5xl mb-5 " style="font-family: Playfair Display;">
                         About Us
                     </div>
@@ -108,69 +109,69 @@
         </div>
     </section>
     <!-- FOURTH SECTION -->
-    <section class="lg:max-h-[800px] lg:w-screen lg:h-auto">
+    <section class="lg:max-h-[800px] lg:w-fit xl:max-h-[1024px]">
         <div class="bg-[url('img/photo/bg-section4.jpg')] bg-cover bg-center bg-no-repeat bg-[#4B2E2E] bg-blend-multiply">
-            <div class="lg:flex lg:flex-row lg:py-4 lg:px-8 gap-3 lg:h-screen">
-                <div class="flex flex-col items-center justify-center text-center text-white py-3 px-5 md:px-8 md:py-4 lg:text-left lg:justify-start lg:items-start lg:py-[180px] lg:px-12 gap-4 lg:gap-10 lg:w-screen">
-                    <div class="font-bold text-center text-2xl md:text-4xl lg:text-6xl mb-5 lg:mb-0 " style="font-family: Playfair Display;">
+            <div class="lg:flex lg:flex-row lg:py-4 lg:px-8 gap-3 lg:h-fit xl:h-fit">
+                <div class="flex flex-col items-center justify-center text-center text-white py-3 px-5 md:px-8 md:py-4 lg:text-left lg:justify-start lg:items-start lg:py-[180px] lg:px-12 gap-4 lg:gap-10 lg:w-fit">
+                    <div class="font-bold text-center text-2xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 lg:mb-0 " style="font-family: Playfair Display;">
                         OUR LOCATION
                     </div>
-                    <div class="font-semibold text-sm md:text-xl lg:text-2xl mb-3 lg:mb-0 ">
+                    <div class="font-semibold text-sm md:text-xl xl:text-2xl mb-3 lg:mb-0 ">
                         Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
                     </div>
-                    <div class="font-semibold text-sm md:text-xl lg:text-xl mb-3 lg:mb-0 ">
+                    <div class="font-semibold text-sm md:text-xl xl:text-xl mb-3 lg:mb-0 ">
                         Open Everyday From 10.00 AM - 20.00 PM
                     </div>
                 </div>
-                <div class="flex justify-center items-center py-3 px-5 md:px-8 md:py-4 lg:py-[180px] lg:px-12 lg:w-screen">
-                    <img class="w-full h-full object-cover rounded-lg shadow-[8px_8px_4px_rgba(0,0,0,0.25)]" src="img/photo/map.png" alt="MAP">
+                <div class="flex justify-center items-center py-3 px-5 md:px-8 md:py-4 lg:py-[180px] lg:px-12 lg:w-fit lg:h-fit">
+                    <img class="w-[50%] lg:w-auto h-auto object-cover rounded-lg shadow-[8px_8px_4px_rgba(0,0,0,0.25)]" src="img/photo/map.png" alt="MAP">
                 </div>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
     <section>
-        <div class="flex flex-col bg-[#F5EBDD] text-[#4B2E2E] px-5 py-3 gap-3 md:px-8 md:py-4 justify-center text-center">
-            <div class="flex flex-row justify-center items-center gap-2">
-                <img class="w-[64px] h-[64px] md:w-[72px] md:h-[72px]" src="img/logo/logo-icon-espresso.png" alt="LOGO-BLACK">
-                <div class="w-fit font-bold text-2xl md:text-4xl" style="font-family: Playfair Display;">
+        <div class="flex flex-col lg:flex-row bg-[#F5EBDD] text-[#4B2E2E] px-5 py-3 md:px-8 md:py-4 lg:px-5 lg:py-3 xl:px-12 xl:py-6 gap-3 lg:gap-1 xl:gap-2  justify-center text-center">
+            <div class="flex flex-row lg:flex-col justify-center items-center gap-2">
+                <img class="w-[64px] h-[64px] md:w-[72px] md:h-[72px] lg:w-[56px] lg:h-[56px] xl:w-[60px] xl:h-[60px]" src="img/logo/logo-icon-espresso.png" src="img/logo/logo-icon-espresso.png" alt="LOGO-BLACK">
+                <div class="w-fit font-bold text-2xl md:text-4xl lg:text-xl xl:text-2xl lg:text-nowrap" style="font-family: Playfair Display;">
                     MY COFFEE
                 </div>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 lg:flex-1">
                 <div class="flex flex-col gap-1">
-                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
+                    <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
                         Our Location
                     </div>
-                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
+                    <div class="text-sm md:text-lg lg:text-base font-semibold">
                         Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
+                    <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
                         Call Us
                     </div>
-                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
+                    <div class="text-sm md:text-lg lg:text-bas font-semibold">
                         +62-812-1234-4567
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 lg:flex-1">
                 <div class="flex flex-col gap-1"> 
-                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
+                    <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
                         Open Hours
                     </div>
-                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
+                    <div class="text-sm md:text-lg lg:text-base font-semibold">
                         Open Everyday From 10.00 AM - 20.00 PM
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 lg:flex-1">
                 <div class="flex flex-col gap-1 justify-center items-center ">
-                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
+                    <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
                         Social Media
                     </div>
-                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
                             <img class="w-4 h-auto md:w-6" src="img/logo/instagram.png" alt="ICON-INSTAGRAM">
                         </div>
@@ -178,7 +179,7 @@
                             Follow us on Instagram
                         </div>
                     </div>
-                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
                             <img class="w-4 h-auto md:w-6" src="img/logo/facebook.png" alt="ICON-FACEBOOK">
                         </div>
@@ -188,12 +189,12 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 lg:flex-1">
                 <div class="flex flex-col gap-1 justify-center items-center ">
-                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
+                    <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
                         For Business Inquiries
                     </div>
-                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
                             <img class="w-4 h-auto md:w-6" src="img/logo/gmail.png" alt="ICON-GMAIL">
                         </div>
@@ -204,7 +205,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
+    </div>
     <!-- Scipt -->
     <script>
         // Script untuk navbar responsive
