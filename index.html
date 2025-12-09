@@ -13,55 +13,55 @@
 <body class="font-[Open_Sans]">
     <!-- NAVIGATION BAR -->
     <header>
-        <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-6">
+        <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6">
             <!-- LOGO LEFT -->
             <div class="flex flex-col items-center w-fit py-1 cursor-pointer">
-                <img src="img/logo/logo-icon-white.png" alt="MYCOFFE-LOGO" class="w-[32px] h-[32px]">
-                <div class="w-fit font-bold text-sm" style="font-family: 'Playfair Display'">MY COFFEE</div>
+                <img src="img/logo/logo-icon-white.png" alt="MYCOFFE-LOGO" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px]">
+                <div class="w-fit font-bold text-sm md:text-xl" style="font-family: 'Playfair Display'">MY COFFEE</div>
             </div>
             <!-- MENU MIDDLE -->
-            <div class="nav-links absolute bg-[#4B2E2E] flex flex-col w-screen left-0 top-[83px] opacity-0 justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out sm:static sm:flex-row sm:opacity-100 sm:z-auto sm:top-auto sm:w-fit sm:gap-6 sm:py-0">
-                <a class="text-2xl w-screen py-1 font-bold underline underline-offset-4 cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">HOME</a>
-                <a class="text-2xl w-screen py-1 font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">MENU</a>
-                <a class="text-2xl w-screen py-1  font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">ABOUT US</a>
-                <a class="text-2xl w-screen py-1 font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">VISIT</a>
+            <div class="nav-links absolute bg-[#4B2E2E] flex flex-col w-screen left-0 top-[83px] opacity-0 justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out md:static md:flex-row md:opacity-100 md:z-auto md:top-auto md:w-fit md:py-0 md:gap-2">
+                <a class="text-xl md:text-base w-screen md:w-fit py-1 md:px-3 md:rounded-xl font-bold underline underline-offset-4 cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">HOME</a>
+                <a class="text-xl md:text-base w-screen md:w-fit py-1 md:px-3 md:rounded-xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">MENU</a>
+                <a class="text-xl md:text-base w-screen md:w-fit py-1 md:px-3 md:rounded-xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">ABOUT US</a>
+                <a class="text-xl md:text-base w-screen md:w-fit py-1 md:px-3 md:rounded-xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">VISIT</a>
             </div>
             <!-- CART LEFT -->
             <div class="flex flex-row items-center gap-2">
-                <img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] hover:scale-110 cursor-pointer">
-                <div class="hidden sm:flex justify-center items-center px-4 py-2 text-xs rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer">YOUR CART</div>
-                <img src="img/logo/menu.png" alt="MENU-ICON" class="w-[32px] h-[32px] sm:hidden cursor-pointer" onclick="onToggleMenu(this)">
+                <img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer">
+                <div class="hidden md:flex justify-center items-center px-4 py-2 text-xs rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer md:text-base">YOUR CART</div>
+                <img src="img/logo/menu.png" alt="MENU-ICON" class="w-[32px] h-[32px] md:hidden cursor-pointer" onclick="onToggleMenu(this)">
             </div>
         </nav>
     </header>
     <!-- FIRST SECTION -->
     <section>
-        <div class="flex flex-col bg-[#4B2E2E] gap-3 px-5 py-3 sm:flex-row sm:px-8">
+        <div class="flex flex-col bg-[#4B2E2E] gap-3 px-5 py-3 sm:flex-row md:px-8 md:py-4">
             <div class="flex">
-                <div style="font-family: 'Playfair Display'" class="text-white font-bold text-5xl sm:text-7xl">Coffe made with love in Bekasi City <span class="mt-4 block text-2xl sm:text-4xl">Since 2025</span></div>
+                <div style="font-family: 'Playfair Display'" class="text-white font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl">Coffe made with love in Bekasi City <span class="mt-4 block text-2xl md:text-4xl">Since 2025</span></div>
             </div>
             <div class="flex w-full justify-center p-6">
-                <img src="img/photo/section 1.png" alt="SECTION-1-PHOTO" class="w-[225px] h-auto rotate-[5deg]">
+                <img src="img/photo/section 1.png" alt="SECTION-1-PHOTO" class="w-[225px] lg:w-[275px] h-auto rotate-[5deg]">
             </div>
         </div>
     </section>
     <!-- SECOND SECTION -->
     <section>
-        <div class="flex flex-col">
+        <div class="flex flex-col lg:flex-row">
             <div class="flex relative overflow-clip w-screen h-[580px] bg-[url(img/photo/section2-bg.png)] bg-no-repeat bg-cover">
-                <img class="absolute w-[360px] h-auto top-[30px] left-[-120px] rotate-[-20deg] " src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
-                <img class="absolute w-[360px] h-auto top-[-10px] left-[20px] rotate-[2deg] " src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
-                <img class="absolute w-[360px] h-auto top-[50px] left-[180px] rotate-[32deg] " src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
+                <img class="absolute w-[360px] h-auto top-[30px] left-[10%] sm:left-[30%] lg:left-[25%] rotate-[-20deg] transform -translate-x-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
+                <img class="absolute w-[360px] h-auto top-[-10px] left-[50%] rotate-[2deg] transform -translate-x-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
+                <img class="absolute w-[360px] h-auto top-[50px] left-[90%] sm:left-[70%] lg:left-[75%] rotate-[32deg] transform -translate-x-1/2" src="img/photo/section 2.png" alt="SECTION-2-PHOTO">
             </div>
-            <div class="flex flex-col px-5 py-3 bg-[#F5EBDD] gap-3">
-                <div class="text-5xl font-bold text-[#4B2E2E]" style="font-family: Fairplay Display;">
+            <div class="flex flex-col lg:justify-center lg:w-screen px-5 py-3 md:py-4 md:px-8 bg-[#F5EBDD] gap-3">
+                <div class="text-5xl md:text-6xl lg:text-5xl font-bold text-[#4B2E2E]" style="font-family: Fairplay Display;">
                     THE MAGIC OF OUR COFFEE IN YOUR HOME
                 </div>
-                <div class="text-sm font-semibold text-[#4B2E2E]">
+                <div class="text-sm md:text-xl lg:text-lg font-semibold text-[#4B2E2E]">
                     For more than 50 years, My Coffee has been crafting its coffee authentically every day. Now, for the first time, you can enjoy that signature flavor in your very own cup.
                 </div>
                 <div>
-                    <div class="w-fit sm:flex justify-center items-center px-4 py-2 text-xs rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-[#4B2E2E] hover:bg-[#7D5A50] text-white font-bold cursor-pointer">SHOP COFFEES</div>
+                    <div class="w-fit md:flex justify-center items-center px-4 py-2 text-xs rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-[#4B2E2E] hover:bg-[#7D5A50] text-white font-bold md:text-base cursor-pointer">SHOP COFFEES</div>
                 </div>
             </div>
         </div>
@@ -69,38 +69,40 @@
     <!-- THIRD SECTION -->
     <section>
         <div class="flex flex-col bg-[url(img/photo/section3-background.png)] text-[#4B2E2E]">
-            <div class="flex flex-col py-3 px-5">
-                <div class="text-5xl font-bold text-center " style="font-family: Playfair Display;">
+            <div class="flex flex-col py-3 px-5 md:py-4 md:px-8">
+                <div class="text-5xl font-bold text-center md:text-6xl lg:text-7xl " style="font-family: Playfair Display;">
                     “Brewed with love, served with warmth.”
                 </div>
-                <div class="text-2xl font-bold text-center " style="font-family: Playfair Display;">
+                <div class="text-2xl md:text-4xl lg:text-5xl font-bold text-center " style="font-family: Playfair Display;">
                     -  My Coffee
                 </div>
             </div>
-            <div class="px-5">
-                <img class="rounded-lg shadow-[-8px_8px_12px_-1px_#4B2E2E]" src="img/photo/section 3.png" alt="SECTION-3-PHOTO">
-            </div>
-            <div class="flex flex-col px-5 py-3">
-                <div class="font-bold text-center text-2xl mb-5 " style="font-family: Playfair Display;">
-                    About Us
+            <div class="lg:flex lg:flex-row lg:py-4 lg:px-8 gap-3">
+                <div class="px-5 md:px-8 lg:w-screen lg:p-0">
+                    <img class="rounded-lg shadow-[-8px_8px_12px_-1px_#4B2E2E]" src="img/photo/section 3.png" alt="SECTION-3-PHOTO">
                 </div>
-                <div class="font-semibold text-sm mb-3 ">
-                    At My Coffee, everything begins with a simple belief: a good cup of coffee can make a day better. Our story started with a small dream and a big passion—bringing authentic, thoughtfully crafted coffee to everyone who walks through our doors.
-                </div>
-                <div class="font-semibold text-sm mb-3 ">
-                    For decades, we've stayed true to the same tradition: selecting quality beans, roasting them with care, and brewing each cup with intention.  No shortcuts, no compromises—just honest coffee  made the right way.
-                </div >
-                <div class="font-semibold text-sm mb-3 ">
-                    What began as a humble corner shop has grown into a space where people gather, connect, and unwind. Whether you’re here for your morning ritual,  an afternoon pick-me-up, or a quiet moment for yourself, we aim to make every cup feel like a comforting pause in the middle of a busy day.
-                </div>
-                <div class="font-semibold text-sm mb-3 ">
-                    More than just a coffee shop, we are a community built on warmth, authenticity, and gratitude. From our first roast to your latest sip,  we’re here to share the joy that good coffee brings.
-                </div>
-                <div class="font-bold text-sm mb-3 ">
-                    This is My Coffee.
-                </div>
-                <div class="font-bold text-sm mb-3 ">
-                    Crafted daily. Shared wholeheartedly.
+                <div class="flex flex-col lg:w-screen px-5 py-3 md:py-4 md:px-8 lg:p-0">
+                    <div class="font-bold text-center text-2xl md:text-4xl lg:text-4xl mb-5 " style="font-family: Playfair Display;">
+                        About Us
+                    </div>
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 ">
+                        At My Coffee, everything begins with a simple belief: a good cup of coffee can make a day better. Our story started with a small dream and a big passion—bringing authentic, thoughtfully crafted coffee to everyone who walks through our doors.
+                    </div>
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 ">
+                        For decades, we've stayed true to the same tradition: selecting quality beans, roasting them with care, and brewing each cup with intention. No shortcuts, no compromises—just honest coffee made the right way.
+                    </div >
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 ">
+                        What began as a humble corner shop has grown into a space where people gather, connect, and unwind. Whether you're here for your morning ritual, an afternoon pick-me-up, or a quiet moment for yourself, we aim to make every cup feel like a comforting pause in the middle of a busy day.
+                    </div>
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 ">
+                        More than just a coffee shop, we are a community built on warmth, authenticity, and gratitude. From our first roast to your latest sip, we're here to share the joy that good coffee brings.
+                    </div>
+                    <div class="font-bold text-sm md:text-xl lg:text-base mb-3 ">
+                        This is My Coffee.
+                    </div>
+                    <div class="font-bold text-sm md:text-xl lg:text-base mb-3 ">
+                        Crafted daily. Shared wholeheartedly.
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,75 +110,78 @@
     <!-- FOURTH SECTION -->
     <section>
         <div class="bg-[url('img/photo/bg-section4.jpg')] bg-cover bg-center bg-no-repeat bg-[#4B2E2E] bg-blend-multiply">
-            <div class="flex flex-col items-center justify-center text-center text-white py-3 px-5 gap-4">
-                <div class="font-bold text-2xl" style="font-family: Playfair Display;">
-                    OUR LOCATION
+            <div class="lg:flex lg:flex-row lg:py-4 lg:px-8 gap-3">
+                <div class="flex flex-col items-center justify-center text-center text-white py-3 px-5 md:px-8 md:py-4 lg:p-0 gap-4 lg:w-screen">
+                    <div class="font-bold text-center text-2xl md:text-4xl lg:text-2xl mb-5 lg:mb-0 " style="font-family: Playfair Display;">
+                        OUR LOCATION
+                    </div>
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 lg:mb-0 ">
+                        Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
+                    </div>
+                    <div class="font-semibold text-sm md:text-xl lg:text-base mb-3 lg:mb-0 ">
+                        Open Everyday From 10.00 AM - 20.00 PM
+                    </div>
                 </div>
-                <div class="font-bold text-sm">
-                    Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
-                </div>
-                <div class="font-bold text-xs">
-                    Open Everyday From 10.00 AM - 20.00 PM
+                <div class="flex justify-center items-center py-3 px-5 md:px-8 md:py-4 lg:p-0 lg:w-screen">
+                    <img class="rounded-lg shadow-[8px_8px_4px_rgba(0,0,0,0.25)]" src="img/photo/map.png" alt="MAP">
                 </div>
             </div>
-            <div class="flex justify-center items-center py-3 px-5">
-                <img class="rounded-lg shadow-[8px_8px_4px_rgba(0,0,0,0.25)]" src="img/photo/map.png" alt="MAP">
-            </div>
+            
         </div>
     </section>
     <!-- FOOTER -->
     <section>
-        <div class="flex flex-col bg-[#F5EBDD] text-[#4B2E2E] px-5 py-3 gap-3 justify-center text-center">
+        <div class="flex flex-col bg-[#F5EBDD] text-[#4B2E2E] px-5 py-3 gap-3 md:px-8 md:py-4 justify-center text-center">
             <div class="flex flex-row justify-center items-center gap-2">
-                <img class="w-[64px] h-[64px]" src="img/logo/logo-icon-espresso.png" alt="LOGO-BLACK">
-                <div class="w-fit font-bold text-2xl" style="font-family: Playfair Display;">
+                <img class="w-[64px] h-[64px] md:w-[72px] md:h-[72px]" src="img/logo/logo-icon-espresso.png" alt="LOGO-BLACK">
+                <div class="w-fit font-bold text-2xl md:text-4xl" style="font-family: Playfair Display;">
                     MY COFFEE
                 </div>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex flex-col gap-1">
-                    <div class="font-bold text-lg">
+                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
                         Our Location
                     </div>
-                    <div class="text-sm font-semibold">
+                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
                         Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <div class="font-bold text-lg">
+                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
                         Call Us
                     </div>
-                    <div class="text-sm font-semibold">
+                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
                         +62-812-1234-4567
                     </div>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex flex-col gap-1"> 
-                    <div class="font-bold text-lg">
+                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
                         Open Hours
                     </div>
-                    <div class="text-sm font-semibold">
+                    <div class="text-sm md:text-lg lg:text-2xl font-semibold">
                         Open Everyday From 10.00 AM - 20.00 PM
                     </div>
                 </div>
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex flex-col gap-1 ">
-                    <div class="font-bold text-lg">
+                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
                         Social Media
                     </div>
-                    <div class="flex flex-row justify-center gap-2 text-sm font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
-                            <img class="w-4 h-auto" src="img/logo/instagram.png" alt="ICON-INSTAGRAM">
+                            <img class="w-4 h-auto md:w-6" src="img/logo/instagram.png" alt="ICON-INSTAGRAM">
                         </div>
                         <div>
                             Follow us on Instagram
                         </div>
                     </div>
-                    <div class="flex flex-row justify-center gap-2 text-sm font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
-                            <img class="w-4 h-auto" src="img/logo/facebook.png" alt="ICON-FACEBOOK">
+                            <img class="w-4 h-auto md:w-6" src="img/logo/facebook.png" alt="ICON-FACEBOOK">
                         </div>
                         <div>
                             Follow us on Facebook
@@ -186,12 +191,12 @@
             </div>
             <div class="flex flex-col gap-2">
                 <div class="flex flex-col gap-1 ">
-                    <div class="font-bold text-lg">
+                    <div class="font-bold text-lg md:text-2xl lg:text-3xl">
                         For Business Inquiries
                     </div>
-                    <div class="flex flex-row justify-center gap-2 text-sm font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="flex flex-row justify-center items-center gap-2 text-sm md:text-lg lg:text-2xl font-semibold cursor-pointer hover:font-bold hover:scale-110">
                         <div>
-                            <img class="w-4 h-auto" src="img/logo/gmail.png" alt="ICON-GMAIL">
+                            <img class="w-4 h-auto md:w-6" src="img/logo/gmail.png" alt="ICON-GMAIL">
                         </div>
                         <div>
                             Email us on Gmail
