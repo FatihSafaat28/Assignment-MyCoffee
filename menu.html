@@ -17,7 +17,7 @@
             <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6">
                 <!-- LOGO LEFT -->
                 <div class="flex flex-col items-center w-fit cursor-pointer">
-                    <img src="img/logo/logo-icon-white.png" alt="MYCOFFE-LOGO" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[60px] lg:h-[60px]">
+                    <img href="index.html" src="img/logo/logo-icon-white.png" alt="MYCOFFE-LOGO" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[60px] lg:h-[60px]">
                     <div class="w-fit font-['Playfair_Display'] font-bold text-sm md:text-base lg:text-lg">MY COFFEE</div>
                 </div>
                 <!-- MENU MIDDLE -->
@@ -29,7 +29,7 @@
                 </div>
                 <!-- CART LEFT -->
                 <div class="flex flex-row items-center gap-2 lg:gap-3 xl:gap-4">
-                    <img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer">
+                    <img href="cart.html" src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer">
                     <div class="hidden md:flex justify-center items-center px-4 py-2 rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer text-base lg:text-lg">YOUR CART</div>
                     <img src="img/logo/menu.png" alt="MENU-ICON" class="w-[32px] h-[32px] md:hidden cursor-pointer" onclick="onToggleMenu(this)">
                 </div>
@@ -538,6 +538,36 @@
             navLinks.classList.toggle('flex');
             navLinks.classList.toggle('opacity-100');
             navLinks.classList.toggle('z-10');
+        }
+
+        // Script untuk carousel drag-to-scroll
+        const slider = document.querySelector('#menu-carousel');
+        if (slider) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 1.5; // Angka 1.5 untuk kecepatan scroll, bisa disesuaikan
+                slider.scrollLeft = scrollLeft - walk;
+            });
         }
     </script>
 </body>
