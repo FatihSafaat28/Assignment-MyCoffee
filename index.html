@@ -12,7 +12,7 @@
 </head>
 <body class="font-[Open_Sans]">
     <div class="max-w-screen-2xl mx-auto overflow-x-hidden">
-        <!-- NAVIGATION BAR -->
+    <!-- NAVIGATION BAR -->
     <header>
         <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6">
             <!-- LOGO LEFT -->
@@ -21,7 +21,7 @@
                 <div class="w-fit font-['Playfair_Display'] font-bold text-sm md:text-base lg:text-lg">MY COFFEE</div>
             </div>
             <!-- MENU MIDDLE -->
-            <div class="nav-links absolute bg-[#4B2E2E] flex flex-col w-full left-0 top-[75px] opacity-0 justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out md:static md:flex-row md:opacity-100 md:z-auto md:top-auto md:w-fit md:py-0 md:gap-2 lg:gap-4 xl:gap-5">
+            <div class="nav-links absolute bg-[#4B2E2E] hidden flex-col w-full left-0 top-[75px] justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out md:static md:flex md:flex-row md:opacity-100 md:z-auto md:top-auto md:w-fit md:py-0 md:gap-2 lg:gap-4 xl:gap-5">
                 <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-bold underline underline-offset-4 cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#">HOME</a>
                 <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="menu.html">MENU</a>
                 <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="#about-us">ABOUT US</a>
@@ -211,13 +211,13 @@
     <script>
         // Script untuk navbar responsive
         const navLinks = document.querySelector('.nav-links')
+        navLinks.classList.add('opacity-0');
         function onToggleMenu(e){
-            const isOpen = navLinks.classList.contains('opacity-100');
             e.src = e.src.includes('menu.png') ? 'img/logo/menu-close.png' : 'img/logo/menu.png';
-
+            
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
             navLinks.classList.toggle('opacity-100');
-
-            // Toggle z-index agar menu muncul di atas konten lain saat aktif
             navLinks.classList.toggle('z-10');
         }
     </script>
