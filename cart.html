@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY COFFEE</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-[Open_Sans] bg-[#4B2E2E]">
+    <div class="max-w-screen-2xl mx-auto">
+        <!-- NAVIGATION BAR -->
+        <header>
+            <nav class="flex flex-row justify-between items-center bg-[#4B2E2E] text-white px-5 md:px-8 lg:px-12 py-3 md:py-4 lg:py-6">
+                <!-- LOGO LEFT -->
+                <a href="index.html" class="flex flex-col items-center w-fit cursor-pointer">
+                    <img src="img/logo/logo-icon-white.png" alt="MYCOFFE-LOGO" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] lg:w-[60px] lg:h-[60px]">
+                    <div class="w-fit font-['Playfair_Display'] font-bold text-sm md:text-base lg:text-lg">MY COFFEE</div>
+                </a>
+                <!-- MENU MIDDLE -->
+                <div class="nav-links absolute bg-[#4B2E2E] hidden flex-col w-full left-0 top-[75px] justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out md:static md:flex md:flex-row md:opacity-100 md:z-auto md:top-auto md:w-fit md:py-0 md:gap-2 lg:gap-4 xl:gap-5">
+                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html">HOME</a>
+                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="menu.html">MENU</a>
+                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html#about-us">ABOUT US</a>
+                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html#visit">VISIT</a>
+                </div>
+                <!-- CART RIGHT -->
+                <div class="flex flex-row items-center gap-2 lg:gap-3 xl:gap-4">
+                    <a href="cart.html"><img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer"></a>
+                    <div class="hidden md:flex justify-center items-center px-4 py-2 rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer text-base lg:text-lg">YOUR CART</div>
+                    <img src="img/logo/menu.png" alt="MENU-ICON" class="w-[32px] h-[32px] md:hidden cursor-pointer" onclick="onToggleMenu(this)">
+                </div>
+            </nav>
+        </header>
+        <!-- FIRST SECTION -->
+        <section>
+            <div class="flex flex-col gap-[1px] text-[#4B2E2E] mb-[20vw]">
+                <!-- HEADER -->
+                <div class="flex justify-center font-['Playfair_Display'] font-bold text-2xl py-3 px-5 bg-[#F5EBDD]">
+                    Shopping Cart
+                </div>
+                <!-- ITEM CART 1 -->
+                <div class="flex flex-col bg-[#F5EBDD] py-3 px-5 gap-5">
+                    <div class="flex flex-row gap-5">
+                        <div class="flex w-[40vw] rounded-xl overflow-clip">
+                            <img class="object-cover object-center" src="img/photo/menu.png" alt="MENUT-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-[60vw]">
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Café Latte
+                                </div>
+                                <div class="flex text-sm font-medium">
+                                    Espresso, steamed milk, delicate foam, paired with a buttery croissant.
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Sugar Level
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-1" class="select-none text-sm font-medium">No Sugar</label>
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-2" class="select-none text-sm font-medium">Low Sugar</label>
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-3" class="select-none text-sm font-medium">Normal Sugar</label>
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-4" class="select-none text-sm font-medium">High Sugar</label>
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <div class="flex text-lg font-bold px-2">
+                                $4.50/pcs
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex">
+                                <div>
+                                    <img class="w-7 h-7 hover:scale-125 cursor-pointer" src="img/logo/icon-delete.png" alt="icon-delete">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-row justify-evenly items-center gap-2">
+                                    <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        -
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E]">
+                                        1
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        +
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM CART 2 -->
+                <div class="flex flex-col bg-[#F5EBDD] py-3 px-5 gap-5">
+                    <div class="flex flex-row gap-5">
+                        <div class="flex w-[40vw] rounded-xl overflow-clip">
+                            <img class="object-cover object-center" src="img/photo/menu.png" alt="MENUT-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-[60vw]">
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Café Latte
+                                </div>
+                                <div class="flex text-sm font-medium">
+                                    Espresso, steamed milk, delicate foam, paired with a buttery croissant.
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Sugar Level
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-1" class="select-none text-sm font-medium">No Sugar</label>
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-2" class="select-none text-sm font-medium">Low Sugar</label>
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-3" class="select-none text-sm font-medium">Normal Sugar</label>
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-4" class="select-none text-sm font-medium">High Sugar</label>
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <div class="flex text-lg font-bold px-2">
+                                $4.50/pcs
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex">
+                                <div>
+                                    <img class="w-7 h-7 hover:scale-125 cursor-pointer" src="img/logo/icon-delete.png" alt="icon-delete">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-row justify-evenly items-center gap-2">
+                                    <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        -
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E]">
+                                        1
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        +
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM CART 3 -->
+                <div class="flex flex-col bg-[#F5EBDD] py-3 px-5 gap-5">
+                    <div class="flex flex-row gap-5">
+                        <div class="flex w-[40vw] rounded-xl overflow-clip">
+                            <img class="object-cover object-center" src="img/photo/menu.png" alt="MENUT-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-[60vw]">
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Café Latte
+                                </div>
+                                <div class="flex text-sm font-medium">
+                                    Espresso, steamed milk, delicate foam, paired with a buttery croissant.
+                                </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex text-lg font-bold">
+                                    Sugar Level
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-1" class="select-none text-sm font-medium">No Sugar</label>
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-2" class="select-none text-sm font-medium">Low Sugar</label>
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-3" class="select-none text-sm font-medium">Normal Sugar</label>
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <label for="default-radio-4" class="select-none text-sm font-medium">High Sugar</label>
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="flex flex-col">
+                            <div class="flex text-lg font-bold px-2">
+                                $4.50/pcs
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="flex">
+                                <div>
+                                    <img class="w-7 h-7 hover:scale-125 cursor-pointer" src="img/logo/icon-delete.png" alt="icon-delete">
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="flex flex-row justify-evenly items-center gap-2">
+                                    <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        -
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E]">
+                                        1
+                                    </div>
+                                    <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                        +
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="flex flex-col justify-center gap-3 bg-[#F5EBDD] px-5 py-3 text-center text-[#4B2E2E] md:px-8 md:py-4 lg:flex-row lg:gap-1 lg:px-5 lg:py-3 xl:gap-2 xl:px-12 xl:py-6">
+                <div class="flex flex-row lg:flex-col justify-center items-center gap-2">
+                    <img class="h-[64px] w-[64px] md:h-[72px] md:w-[72px] lg:h-[56px] lg:w-[56px] xl:h-[60px] xl:w-[60px]" src="img/logo/logo-icon-espresso.png" alt="LOGO-BLACK">
+                    <div class="font-['Playfair_Display'] w-fit text-2xl font-bold md:text-4xl lg:text-nowrap lg:text-xl xl:text-2xl">
+                        MY COFFEE
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 lg:flex-1">
+                    <div class="flex flex-col gap-1">
+                        <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
+                            Our Location
+                        </div>
+                        <div class="text-sm md:text-lg lg:text-base font-semibold">
+                            Jl. Rajawali Raya, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
+                            Call Us
+                        </div>
+                        <div class="text-sm font-semibold md:text-lg lg:text-base">
+                            +62-812-1234-4567
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 lg:flex-1">
+                    <div class="flex flex-col gap-1"> 
+                        <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
+                            Open Hours
+                        </div>
+                        <div class="text-sm md:text-lg lg:text-base font-semibold">
+                            Open Everyday From 10.00 AM - 20.00 PM
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 lg:flex-1">
+                    <div class="flex flex-col gap-1 justify-center items-center ">
+                        <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
+                            Social Media
+                        </div>
+                        <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                            <div>
+                                <img class="w-4 h-auto md:w-6" src="img/logo/instagram.png" alt="ICON-INSTAGRAM">
+                            </div>
+                            <div>
+                                Follow us on Instagram
+                            </div>
+                        </div>
+                        <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                            <div>
+                                <img class="w-4 h-auto md:w-6" src="img/logo/facebook.png" alt="ICON-FACEBOOK">
+                            </div>
+                            <div>
+                                Follow us on Facebook
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 lg:flex-1">
+                    <div class="flex flex-col gap-1 justify-center items-center ">
+                        <div class="font-bold text-lg md:text-2xl lg:text-lg xl:text-xl">
+                            For Business Inquiries
+                        </div>
+                        <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                            <div>
+                                <img class="w-4 h-auto md:w-6" src="img/logo/gmail.png" alt="ICON-GMAIL">
+                            </div>
+                            <div>
+                                Email us on Gmail
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scipt -->
+    <script>
+        // Script untuk navbar responsive
+        const navLinks = document.querySelector('.nav-links')
+        navLinks.classList.add('opacity-0');
+        function onToggleMenu(e){
+            e.src = e.src.includes('menu.png') ? 'img/logo/menu-close.png' : 'img/logo/menu.png';
+            
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('opacity-100');
+            navLinks.classList.toggle('z-10');
+        }
+
+        // Script untuk carousel drag-to-scroll
+        const slider = document.querySelector('#menu-carousel');
+        if (slider) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+            });
+
+            slider.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = (x - startX) * 1.5; // Angka 1.5 untuk kecepatan scroll, bisa disesuaikan
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        }
+    </script>
+</body>
+</html>
