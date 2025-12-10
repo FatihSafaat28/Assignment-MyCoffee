@@ -37,8 +37,8 @@
         </header>
         <!-- FIRST SECTION -->
         <section>
-            <div class="flex justify-center px-5 bg-[linear-gradient(0deg,rgba(75,46,46,0.7),rgba(75,46,46,0.7)),url('/img/photo/menu-bg.png')] bg-cover bg-center h-[calc(100vh-76px)]">
-                <div class="font-['Playfair_Display'] py-[calc(45vh-76px)] font-bold text-4xl h-fit w-full text-center text-white">
+            <div class="flex justify-center md:items-center px-5 bg-[linear-gradient(0deg,rgba(75,46,46,0.7),rgba(75,46,46,0.7)),url('/img/photo/menu-bg.png')] bg-cover bg-center h-[calc(100vh-76px)]">
+                <div class="font-['Playfair_Display'] py-[calc(45vh-76px)] md:py-0 font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl h-fit w-full text-center text-white">
                     “Where every cup <span class="block">feels like home.”</span>
                 </div>
             </div>
@@ -46,273 +46,401 @@
         <!-- MENU SECTION -->
         <section>
             <div class="flex flex-col justify-center bg-[linear-gradient(0deg,rgba(75,46,46,0.7),rgba(75,46,46,0.7)),url('/img/photo/bg-section4.jpg')] bg-cover bg-center h-fit">
-                <div class="flex flex-col flex-1 py-4 px-5 font-['Playfair_Display'] text-white text-center backdrop-blur-[2px] gap-6">
-                    <div class="flex flex-2 font-bold tracking-[8%] text-4xl justify-center items-center ">
+                <div class="flex flex-col flex-1 py-4 px-5 md:px-8 md:py-4 lg:px-12 lg:py-6 font-['Playfair_Display'] text-white text-center backdrop-blur-[2px] gap-6">
+                    <div class="flex flex-2 font-bold tracking-[8%] text-4xl sm:text-5xl justify-center items-center ">
                         MENU LIST
                     </div>
                     <div class="flex flex-1 flex-row justify-center items-center gap-6">
-                        <div class="flex w-fit text-lg font-medium hover:scale-110 cursor-pointer">
+                        <div class="flex w-fit text-lg md:text-xl font-medium hover:scale-110 cursor-pointer">
                             Meals
                         </div>
-                        <div class="flex w-fit text-xl font-bold underline underline-offset-2 hover:scale-110 cursor-pointer">
+                        <div class="flex w-fit text-xl md:text-2xl font-bold underline underline-offset-2 hover:scale-110 cursor-pointer">
                             Drinks
                         </div>
                     </div>
                 </div>
-                <div id="menu-carousel" class="flex flex-row flex-3 w-full min-w-0 overflow-x-scroll justify-start py-4 px-5 gap-6 cursor-grab active:cursor-grabbing snap-x snap-mandatory scroll-smooth">
+                <div id="menu-carousel" class="flex flex-row flex-3 w-full min-w-0 overflow-x-scroll justify-start py-4 px-5 md:px-8 md:pt-4 md:pb-10 lg:px-12 gap-6 cursor-grab active:cursor-grabbing snap-x snap-mandatory scroll-smooth">
                     <!-- MENU CARD -->
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
                     </div>
-                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[calc(75vw)] h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
                         <div class="w-full h-[55%]">
                             <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
                         </div>
                         <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
-                            <div class="font-['Playfair_Display'] text-2xl font-bold">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
                                 Café Latte
                             </div>
-                            <div class="text-xs font-semibold">
-                                Espresso, steamed milk, delicate foam, <span class="block">paired with a butter croissant.</span>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl font-bold">
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
                             $4.50/pcs
                         </div>
                         <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
                             <div class="flex flex-row justify-evenly items-center gap-2">
-                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     -
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
                                     1
                                 </div>
-                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
                                     +
                                 </div>
                             </div>
-                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                                Add to cart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                        <div class="w-full h-[55%]">
+                            <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+                                Café Latte
+                            </div>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
+                            $4.50/pcs
+                        </div>
+                        <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
+                            <div class="flex flex-row justify-evenly items-center gap-2">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    -
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                    1
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    +
+                                </div>
+                            </div>
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                                Add to cart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                        <div class="w-full h-[55%]">
+                            <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+                                Café Latte
+                            </div>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
+                            $4.50/pcs
+                        </div>
+                        <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
+                            <div class="flex flex-row justify-evenly items-center gap-2">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    -
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                    1
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    +
+                                </div>
+                            </div>
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                                Add to cart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                        <div class="w-full h-[55%]">
+                            <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+                                Café Latte
+                            </div>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
+                            $4.50/pcs
+                        </div>
+                        <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
+                            <div class="flex flex-row justify-evenly items-center gap-2">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    -
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                    1
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    +
+                                </div>
+                            </div>
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
+                                Add to cart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snap-center select-none flex flex-col flex-shrink-0 w-[75vw] sm:w-[45vw] md:w-[40vw] lg:w-[35vw] xl:w-[25vw] sm:gap-1 h-fit bg-[#F5EBDD] rounded-3xl items-center overflow-clip text-[#4B2E2E]">
+                        <div class="w-full h-[55%]">
+                            <img class="pointer-events-none object-cover object-center w-full h-full" src="img/photo/menu.png" alt="MENU-PHOTO">
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center">
+                            <div class="font-['Playfair_Display'] text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+                                Café Latte
+                            </div>
+                            <div class="text-xs md:text-sm lg:text-base xl:text-lg font-semibold">
+                                Espresso, steamed milk, delicate foam, <span class="block lg:inline">paired with a butter croissant.</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full items-center py-3 px-[5%] text-center text-2xl lg:text-3xl font-bold">
+                            $4.50/pcs
+                        </div>
+                        <div class="flex flex-row w-full h-full justify-between items-center pt-3 pb-[10%] px-[5%]">
+                            <div class="flex flex-row justify-evenly items-center gap-2">
+                                <div class="px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    -
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F]">
+                                    1
+                                </div>
+                                <div class="px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110">
+                                    +
+                                </div>
+                            </div>
+                            <div class="px-3 py-1 font-semibold rounded-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F] hover:bg-[#7D5A50] hover:scale-110">
                                 Add to cart
                             </div>
                         </div>
