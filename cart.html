@@ -8,7 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @layer components {
+            .nav-link {
+                @apply text-xl md:text-base lg:text-lg  w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl cursor-pointer hover:scale-110 hover:bg-[#7D5A50] transition-transform duration-200;
+            }
+            .btn-cart {
+                @apply hidden md:flex justify-center items-center px-4 py-2 rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer text-base lg:text-lg transition-colors duration-200;
+            }
+            .footer-social-item {
+                @apply flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110 transition-transform duration-200;
+            }
+            .btn-qty-minus {
+                @apply cursor-pointer px-3 py-1 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110 transition-transform duration-200;
+            }
+            .btn-qty-val {
+                @apply cursor-pointer px-3 py-1 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] shadow-[-4px_4px_1.5px_#2E1F1F];
+            }
+            .btn-qty-plus {
+                @apply cursor-pointer px-3 py-1 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl bg-[#4B2E2E] hover:bg-[#7D5A50] shadow-[-4px_4px_1.5px_#2E1F1F] hover:scale-110 transition-transform duration-200;
+            }
+            .radio-sugar {
+                @apply w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0 cursor-pointer;
+            }
+        }
+    </style>
 </head>
 <body class="font-[Open_Sans]">
     <div class="max-w-screen-2xl mx-auto bg-[#4B2E2E]">
@@ -22,15 +46,15 @@
                 </a>
                 <!-- MENU MIDDLE -->
                 <div class="nav-links absolute bg-[#4B2E2E] hidden flex-col w-full left-0 top-[75px] justify-center items-center text-center gap-2 py-1 transition-all duration-500 ease-in-out md:static md:flex md:flex-row md:opacity-100 md:z-auto md:top-auto md:w-fit md:py-0 md:gap-2 lg:gap-4 xl:gap-5">
-                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html">HOME</a>
-                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="menu.html">MENU</a>
-                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html#about-us">ABOUT US</a>
-                    <a class="text-xl md:text-lg w-full md:w-fit py-1 md:px-4 lg:px-5 md:rounded-3xl font-semibold cursor-pointer hover:scale-110 hover:bg-[#7D5A50]" href="index.html#visit">VISIT</a>
+                    <a class="nav-link font-semibold" href="index.html">HOME</a>
+                    <a class="nav-link font-semibold" href="menu.html">MENU</a>
+                    <a class="nav-link font-semibold" href="index.html#about-us">ABOUT US</a>
+                    <a class="nav-link font-semibold" href="index.html#visit">VISIT</a>
                 </div>
                 <!-- CART RIGHT -->
                 <div class="flex flex-row items-center gap-2 lg:gap-3 xl:gap-4">
-                    <a href="cart.html"><img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer"></a>
-                    <div class="hidden md:flex justify-center items-center px-4 py-2 rounded-3xl shadow-[-4px_4px_1.5px_#2E1F1F] bg-white hover:bg-[#F5EBDD] text-[#4B2E2E] font-bold cursor-pointer text-base lg:text-lg">YOUR CART</div>
+                    <a href="cart.html"><img src="img/logo/shop-icon-white.png" alt="SHOP-ICON" class="w-[32px] h-[32px] md:w-[40px] md:h-[40px] hover:scale-110 cursor-pointer transition-transform duration-200"></a>
+                    <div class="btn-cart">YOUR CART</div>
                     <img src="img/logo/menu.png" alt="MENU-ICON" class="w-[32px] h-[32px] md:hidden cursor-pointer" onclick="onToggleMenu(this)">
                 </div>
             </nav>
@@ -64,19 +88,19 @@
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-1" class="select-none text-sm lg:text-base xl:text-lg font-medium">No Sugar</label>
-                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="cursor-pointer w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-2" class="cursor-pointer select-none text-sm lg:text-base xl:text-lg font-medium">Low Sugar</label>
-                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="cursor-pointer w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-3" class="cursor-pointer select-none text-sm lg:text-base xl:text-lg font-medium">Normal Sugar</label>
-                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="cursor-pointer w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-4" class="cursor-pointer select-none text-sm lg:text-base xl:text-lg font-medium">High Sugar</label>
-                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="cursor-pointer w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     
                                 </div>
@@ -97,13 +121,13 @@
                             </div>
                             <div class="flex">
                                 <div class="flex flex-row justify-evenly items-center gap-2 lg:gap-4">
-                                    <div class="cursor-pointer px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-minus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         -
                                     </div>
-                                    <div class="cursor-pointer px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E]">
+                                    <div class="btn-qty-val lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         1
                                     </div>
-                                    <div class="cursor-pointer px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-plus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         +
                                     </div>
                                 </div>
@@ -133,19 +157,19 @@
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-1" class="select-none text-sm lg:text-base xl:text-lg font-medium">No Sugar</label>
-                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-2" class="select-none text-sm lg:text-base xl:text-lg font-medium">Low Sugar</label>
-                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-3" class="select-none text-sm lg:text-base xl:text-lg font-medium">Normal Sugar</label>
-                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-4" class="select-none text-sm lg:text-base xl:text-lg font-medium">High Sugar</label>
-                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     
                                 </div>
@@ -166,13 +190,13 @@
                             </div>
                             <div class="flex">
                                 <div class="flex flex-row justify-evenly items-center gap-2 lg:gap-4">
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-minus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         -
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E]">
+                                    <div class="btn-qty-val lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         1
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-plus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         +
                                     </div>
                                 </div>
@@ -202,19 +226,19 @@
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-1" class="select-none text-sm lg:text-base xl:text-lg font-medium">No Sugar</label>
-                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-2" class="select-none text-sm lg:text-base xl:text-lg font-medium">Low Sugar</label>
-                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-3" class="select-none text-sm lg:text-base xl:text-lg font-medium">Normal Sugar</label>
-                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-4" class="select-none text-sm lg:text-base xl:text-lg font-medium">High Sugar</label>
-                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     
                                 </div>
@@ -235,13 +259,13 @@
                             </div>
                             <div class="flex">
                                 <div class="flex flex-row justify-evenly items-center gap-2 lg:gap-4">
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-minus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         -
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E]">
+                                    <div class="btn-qty-val lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         1
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-plus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         +
                                     </div>
                                 </div>
@@ -271,19 +295,19 @@
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-1" class="select-none text-sm lg:text-base xl:text-lg font-medium">No Sugar</label>
-                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-1" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-2" class="select-none text-sm lg:text-base xl:text-lg font-medium">Low Sugar</label>
-                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-2" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-3" class="select-none text-sm lg:text-base xl:text-lg font-medium">Normal Sugar</label>
-                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-3" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     <div class="flex items-center gap-2">
                                         <label for="default-radio-4" class="select-none text-sm lg:text-base xl:text-lg font-medium">High Sugar</label>
-                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="w-4 h-4 rounded-none accent-[#4B2E2E] focus:ring-0 focus:ring-offset-0">
+                                        <input id="default-radio-4" type="radio" value="" name="default-radio" class="radio-sugar">
                                     </div>
                                     
                                 </div>
@@ -304,13 +328,13 @@
                             </div>
                             <div class="flex">
                                 <div class="flex flex-row justify-evenly items-center gap-2 lg:gap-4">
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tl-3xl rounded-bl-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-minus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         -
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-lg text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E]">
+                                    <div class="btn-qty-val lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         1
                                     </div>
-                                    <div class="px-3 py-1 lg:px-4 lg:py-2 xl:px-5 font-semibold rounded-tr-3xl rounded-br-3xl text-white text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl bg-[#4B2E2E] hover:bg-[#7D5A50] hover:scale-110">
+                                    <div class="btn-qty-plus lg:px-4 lg:py-2 xl:px-5 xl:text-2xl">
                                         +
                                     </div>
                                 </div>
@@ -381,6 +405,7 @@
                             Social Media
                         </div>
                         <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="footer-social-item">
                             <div>
                                 <img class="w-4 h-auto md:w-6" src="img/logo/instagram.png" alt="ICON-INSTAGRAM">
                             </div>
@@ -389,6 +414,7 @@
                             </div>
                         </div>
                         <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="footer-social-item">
                             <div>
                                 <img class="w-4 h-auto md:w-6" src="img/logo/facebook.png" alt="ICON-FACEBOOK">
                             </div>
@@ -404,6 +430,7 @@
                             For Business Inquiries
                         </div>
                         <div class="flex flex-row w-fit justify-center items-center gap-2 text-sm md:text-lg lg:text-base font-semibold cursor-pointer hover:font-bold hover:scale-110">
+                    <div class="footer-social-item">
                             <div>
                                 <img class="w-4 h-auto md:w-6" src="img/logo/gmail.png" alt="ICON-GMAIL">
                             </div>
